@@ -424,6 +424,13 @@ static BOOL disableRefreshingNotebooksCacheOnLaunch;
     self.authenticator = nil;
 }
 
+- (void) resetAuthenticator
+{
+    [self unauthenticate];
+    
+    self.authenticator = nil;
+}
+
 - (BOOL)isAuthenticationInProgress
 {
     return self.authenticator != nil;

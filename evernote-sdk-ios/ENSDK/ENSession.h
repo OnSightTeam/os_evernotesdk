@@ -299,6 +299,11 @@ typedef NS_OPTIONS(NSUInteger, ENSessionSortOrder) {
  */
 - (BOOL)handleOpenURL:(NSURL *)url NS_SWIFT_NAME(handleOpenURL(_:));
 
+/**
+ *  Unauthenticate the current user and reset authenticator.
+ */
+- (void) resetAuthenticator;
+
 #pragma mark - Evernote functions
 
 /**
